@@ -1,0 +1,17 @@
+.searchBar {
+  display: flex;
+}
+.searchBar input {
+  padding: 0.75rem;
+  margin: auto;
+  width: 65%;
+  border: 0.1rem grey solid;
+  border-radius: 6%;
+}
+.searchBar img {
+  height: 70px;
+  width: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2rem 0 0;
+}/*# sourceMappingURL=search.css.map */
