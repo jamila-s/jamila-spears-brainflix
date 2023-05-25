@@ -4,7 +4,7 @@ import './logo.scss'
 function Logo () {
     return (
         <div className='logo'> 
-            <img src={logoSvg} alt= 'logo' />
+            <img className='logoImage' src={logoSvg} alt= 'logo' />
         </div>
     )
 }
