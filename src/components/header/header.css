@@ -11,13 +11,14 @@ body {
   display: flex;
   overflow-x: hidden;
   width: 100%;
+  justify-content: center;
 }
 
 .App {
   overflow: hidden;
-  border: red solid 5px;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 header {
@@ -30,5 +31,6 @@ header {
 @media (min-width: 768px) {
   header {
     flex-direction: row;
+    justify-content: left;
   }
 }/*# sourceMappingURL=header.css.map */

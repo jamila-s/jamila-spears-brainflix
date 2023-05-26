@@ -1,9 +1,15 @@
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 .button {
     // margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        position: relative;
+    }
 
     button {
         padding-top: .75rem;
@@ -11,7 +17,7 @@
         background-color: $primary-cta-blue;
         margin: 1rem auto;
         width: 85%;
-        height: 5vh;
+        height: 2.5vh;
         border: .1rem $primary-cta-blue solid;
         border-radius: .625rem;
         color: #FFFFFF;
@@ -20,6 +26,16 @@
         text-align: center;
         display: flex;
         // justify-content: center;
+
+        @include tablet {
+            display: flex;
+            width: 12rem;
+            margin-right: 1rem;
+            padding-right: 2rem;
+            font-size: 1rem;
+            justify-content: left;
+            
+        }
     }
 
     .uploadImage{
@@ -28,6 +44,14 @@
         margin-right: 30%;
         margin-left: 1rem;
         margin-top: .2rem;
+        align-items: center;
+
+        @include tablet {
+            width: 1.5rem;
+            margin-right: 15%;
+            margin-top: 0;
+
+        }
         
     }
 }

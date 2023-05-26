@@ -1,6 +1,12 @@
 .button {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .button {
+    position: relative;
+  }
 }
 .button button {
   padding-top: 0.75rem;
@@ -8,7 +14,7 @@
   background-color: #0095ff;
   margin: 1rem auto;
   width: 85%;
-  height: 5vh;
+  height: 2.5vh;
   border: 0.1rem #0095ff solid;
   border-radius: 0.625rem;
   color: #FFFFFF;
@@ -17,10 +23,28 @@
   text-align: center;
   display: flex;
 }
+@media (min-width: 768px) {
+  .button button {
+    display: flex;
+    width: 12rem;
+    margin-right: 1rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    justify-content: left;
+  }
+}
 .button .uploadImage {
   width: 2rem;
   justify-content: left;
   margin-right: 30%;
   margin-left: 1rem;
   margin-top: 0.2rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .button .uploadImage {
+    width: 1.5rem;
+    margin-right: 15%;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=button.css.map */

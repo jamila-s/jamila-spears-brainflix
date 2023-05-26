@@ -6,14 +6,22 @@
     display: flex;
     width: 100%;
     justify-content: center;
+
+    @include tablet{
+        justify-content: left;
+        width: 30%;
+    }
 }
 .logoImage {
+    display: flex;
     margin: 2rem auto 1rem auto;
     justify-content: center;
-    width: 14rem;
+    width: 12rem;
 
     @include tablet {
         width: 12rem;
+        margin: 2rem 1rem 1rem 1rem;
+       justify-content: left;
         
     }
 }
