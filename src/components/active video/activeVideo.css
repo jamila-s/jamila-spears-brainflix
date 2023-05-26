@@ -1,12 +1,70 @@
 .activeVideoPlayer {
   display: flex;
+  width: 100%;
+  flex-direction: column;
 }
-.activeVideoPlayer h1 {
-  text-align: center;
+.activeVideoPlayer__title {
+  text-align: left;
   display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 .activeVideoPlayer .activeVideo {
-  width: 5rem;
-  margin: auto;
+  width: 100%;
+  margin: 0.75rem auto 1rem auto;
   justify-content: center;
+}
+.activeVideoPlayer .activeVideo__divider {
+  display: flex;
+  border-bottom: #E1E1E1 0.2rem solid;
+  width: 95%;
+  margin: auto;
+}
+
+.activeVideoData {
+  display: flex;
+  margin: 1.5rem;
+  justify-content: space-between;
+}
+.activeVideoData__section1--channel {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.activeVideoData__section1--date {
+  font-size: 1.5rem;
+  color: #AFAFAF;
+}
+.activeVideoData__section2 {
+  margin-right: 4rem;
+}
+.activeVideoData__viewsSection {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.activeVideoData__viewsSection--count {
+  margin-left: 1rem;
+  color: #AFAFAF;
+  font-size: 1.5rem;
+}
+.activeVideoData__viewsSection img {
+  width: 2rem;
+}
+.activeVideoData__likesSection {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.activeVideoData__likesSection--likes {
+  margin-left: 1rem;
+  color: #AFAFAF;
+  font-size: 1.5rem;
+}
+.activeVideoData__likesSection img {
+  width: 1.8rem;
+}
+.activeVideoData__description {
+  width: 90%;
+  margin: 1rem auto;
 }/*# sourceMappingURL=activeVideo.css.map */

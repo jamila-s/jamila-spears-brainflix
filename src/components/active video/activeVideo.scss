@@ -1,18 +1,98 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
 .activeVideoPlayer {
     display: flex;
-    // // width: 100%;
-    // flex-direction: column;
+    width: 100%;
+    flex-direction: column;
 
-    h1 {
+
+    &__title {
         // width: 60%;
-        text-align: center;
+        text-align: left;
         display: flex;
-        // margin: auto;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+
     }
 
     .activeVideo {
-        width: 5rem;
-        margin: auto;
+        width: 100%;
+        margin: .75rem auto 1rem auto;
         justify-content: center;
+        
+
+        &__divider {
+            display: flex;
+            border-bottom: $divider-form-color .2rem solid;
+            width: 95%;
+            margin: auto;
+        }
+    
+    }
+}
+
+.activeVideoData {
+    display: flex;
+    margin: 1.5rem;
+    justify-content: space-between;
+
+    &__section1 {
+       
+            
+        &--channel {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+
+        }
+
+        &--date {
+            font-size: 1.5rem;
+            color: $secondary-text-color;
+        }
+        
+    }
+
+    &__section2 {
+        margin-right: 4rem;
+
+    }
+
+    &__viewsSection{
+        display: flex;
+        margin-bottom: 1rem;
+
+        &--count {
+            margin-left: 1rem;
+            color: $secondary-text-color;
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 2rem;
+        }
+    }
+
+    &__likesSection{
+        display: flex;
+        margin-bottom: 1rem;
+
+        &--likes {
+            margin-left: 1rem;
+            color: $secondary-text-color;
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 1.8rem;
+        }
+    }
+
+    &__description{
+        width: 90%;
+        margin: 1rem auto;
     }
 }
