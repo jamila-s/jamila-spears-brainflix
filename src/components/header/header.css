@@ -1,1 +1,34 @@
-/*# sourceMappingURL=header.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next";
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.App {
+  overflow: hidden;
+  border: red solid 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,8 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next";
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.App {
+  overflow: hidden;
+  border: red solid 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+}
+
 .logo {
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .logoImage {
-  margin: 2rem auto 0rem auto;
+  margin: 2rem auto 1rem auto;
+  justify-content: center;
   width: 14rem;
+}
+@media (min-width: 768px) {
+  .logoImage {
+    width: 12rem;
+  }
 }/*# sourceMappingURL=logo.css.map */

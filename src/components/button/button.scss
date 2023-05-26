@@ -1,28 +1,31 @@
-@use '../../styles/partials/variables';
+@use '../../styles/partials/variables' as *;
 
 .button {
-    // background-color: $primary-cta-blue;
+    // margin: auto;
     display: flex;
+    justify-content: center;
 
     button {
         padding-top: .75rem;
-        background-color: #0095ff;
+        padding-bottom: 2.5rem;
+        background-color: $primary-cta-blue;
         margin: 2rem auto;
-        width: 90%;
+        width: 70%;
         height: 5vh;
-        border: .1rem grey solid;
+        border: .1rem $primary-cta-blue solid;
         border-radius: .625rem;
         color: #FFFFFF;
         font-size: 1.5rem;
         font-weight: 600;
         text-align: center;
         display: flex;
+        // justify-content: center;
     }
 
     .uploadImage{
         width: 2rem;
         justify-content: left;
-        margin-right: 11rem;
+        margin-right: 30%;
         margin-left: 1rem;
         margin-top: .2rem;
         

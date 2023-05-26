@@ -1,0 +1,18 @@
+.activeVideoPlayer {
+    display: flex;
+    // // width: 100%;
+    // flex-direction: column;
+
+    h1 {
+        // width: 60%;
+        text-align: center;
+        display: flex;
+        // margin: auto;
+    }
+
+    .activeVideo {
+        width: 5rem;
+        margin: auto;
+        justify-content: center;
+    }
+}

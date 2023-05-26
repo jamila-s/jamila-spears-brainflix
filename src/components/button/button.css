@@ -1,13 +1,15 @@
 .button {
   display: flex;
+  justify-content: center;
 }
 .button button {
   padding-top: 0.75rem;
+  padding-bottom: 2.5rem;
   background-color: #0095ff;
   margin: 2rem auto;
-  width: 90%;
+  width: 70%;
   height: 5vh;
-  border: 0.1rem grey solid;
+  border: 0.1rem #0095ff solid;
   border-radius: 0.625rem;
   color: #FFFFFF;
   font-size: 1.5rem;
@@ -18,7 +20,7 @@
 .button .uploadImage {
   width: 2rem;
   justify-content: left;
-  margin-right: 11rem;
+  margin-right: 30%;
   margin-left: 1rem;
   margin-top: 0.2rem;
 }/*# sourceMappingURL=button.css.map */

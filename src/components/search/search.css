@@ -1,17 +1,26 @@
 .searchBar {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .searchBar input {
-  padding: 0.75rem;
-  margin: auto;
-  width: 65%;
-  border: 0.3rem #E1E1E1 solid;
+  background-image: url("../../assets/Icons/search.svg");
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  margin-right: 3rem;
+  margin-left: 2rem;
+  width: 80%;
+  border: 0.2rem #E1E1E1 solid;
   border-radius: 0.625rem;
+  height: 5vh;
+  font-size: 1.1rem;
+  color: #323232;
 }
 .searchBar img {
-  height: 70px;
-  width: 80px;
+  height: 50px;
+  width: 75px;
   border-radius: 50%;
   display: inline-block;
-  margin: 0 2rem 0 0;
+  margin-right: 2rem;
 }/*# sourceMappingURL=search.css.map */

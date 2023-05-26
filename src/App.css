@@ -4,4 +4,19 @@
   box-sizing: border-box;
   font-family: "Avenir Next";
   max-width: 1920px;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  justify-content: center;
+}
+
+.App {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }/*# sourceMappingURL=App.css.map */

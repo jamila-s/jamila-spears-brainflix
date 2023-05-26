@@ -1,0 +1,12 @@
+.activeVideoPlayer {
+  display: flex;
+}
+.activeVideoPlayer h1 {
+  text-align: center;
+  display: flex;
+}
+.activeVideoPlayer .activeVideo {
+  width: 5rem;
+  margin: auto;
+  justify-content: center;
+}/*# sourceMappingURL=activeVideo.css.map */

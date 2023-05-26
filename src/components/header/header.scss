@@ -1,0 +1,15 @@
+@use '../../App.scss' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow-x: hidden;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+}
