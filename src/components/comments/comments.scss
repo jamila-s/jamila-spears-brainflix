@@ -1,0 +1,87 @@
+@use '../../styles/partials/variables' as *;
+
+
+.comments{
+
+    &__title{
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-title{
+        
+            margin-left: 5rem;
+        }
+
+        &-container{
+            display: flex;
+            width: 100%;
+
+        }
+
+        &-miniContainer{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            label {
+                color: $secondary-text-color;
+                margin-left: 2rem;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+
+            input {
+                padding-top: 0;
+            }
+
+            .comments__form-image {
+                margin-left: 2rem;
+                height: 70px;
+                width: 80px;
+                border-radius: 50%;
+                display: inline-block;
+                margin-top: 2rem;
+            }
+
+            form {
+                width: 100%;
+                
+
+            #userComment{
+                height: 8rem;
+                width: 80%;
+                margin-left: 2rem;
+                border-radius: .5rem;
+                border: $divider-form-color .1rem solid;
+            }
+        }
+        }
+            // button {
+            //     display: flex;
+            //     background-color: $primary-cta-blue;
+            //     border: $primary-cta-blue solid .1rem;
+            //     width: 80%;
+            //     justify-content: left;
+            //     align-items: center;
+            //     margin-left: 2rem;
+            //     margin-top: 1rem;
+            //     height: 7vh;
+            //     border-radius: .3rem;
+            //     color: #FFFFFF;
+
+            //     img{
+            //         padding-right: 7rem ;
+            //     }
+            // }
+
+
+}
+}

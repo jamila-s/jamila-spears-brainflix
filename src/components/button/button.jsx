@@ -1,12 +1,15 @@
 import upload from '../../assets/Icons/upload.svg';
 import './button.scss';
 
-function Button () {
-    return(
-        <div className="button">
-            <button><img className='uploadImage' src={upload} alt='upload' />Upload</button>
+function Button  (props)  {
+    const { buttonLabel } = props;
+    const { buttonImage } = props;
+  
+    return (
+        <div className='button__container'>
+            
+            <button><img src={buttonImage} />{buttonLabel}</button>
         </div>
-    )
-}
+  )};
 
 export default Button;

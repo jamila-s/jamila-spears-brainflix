@@ -1,11 +1,14 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
 
-.button {
+.button__container {
     // margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    // background-color: $primary-cta-blue;
+    color: #FFFFFF;
+
 
     @include tablet {
         position: relative;
@@ -25,7 +28,8 @@
         font-weight: 600;
         text-align: center;
         display: flex;
-        // justify-content: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
 
         @include tablet {
             display: flex;
@@ -34,6 +38,10 @@
             padding-right: 2rem;
             font-size: 1rem;
             justify-content: left;
+
+            label{
+                color: #FFFFFF;
+            }
             
         }
     }
