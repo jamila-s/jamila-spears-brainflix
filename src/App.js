@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import videoDataJSON from './data/video-details.json';
+
 import Header from './components/header/header'
 import Active from './components/active video/activeVideo';
-import Comments from './components/comments/comments';
+import CommentsView from './components/comments/comments';
 
 
 import './App.css';
@@ -19,7 +18,7 @@ function App() {
     <div className="App">
       <Header />
       <Active />
-      <Comments />
+      <CommentsView />
       {/* <h1>{selectedVideo.title}</h1>
       <img className = "activeVideo" src={selectedVideo.image} alt={selectedVideo.title} /> */}
 

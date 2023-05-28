@@ -84,4 +84,106 @@
 
 
 }
+
+}
+
+.videos{
+
+    display: flex;
+    flex-direction: column;
+    // margin: auto;
+   
+
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    img {
+        width: 40%;
+        height: 8rem;
+        border-radius: .5rem;
+    }
+
+    .videoList {
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+       margin-bottom: 2rem;
+
+       &__text {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 3rem;
+       }
+
+       &__name {
+        font-weight: 600;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+       }
+
+       &__channel {
+        font-size: 1.3rem;
+       }
+    }
+}
+
+}
+
+.commentList {
+    display: flex;
+
+    .dot{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        height: 60px;
+        width: 60px;
+        background-color: $divider-form-color;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    &__text {
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        &-miniContainer{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        &-name{
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        &-date{
+            color: $secondary-text-color;
+        }
+    }
+
+    &__divider{
+        display: flex;
+            border-bottom: $divider-form-color .15rem solid;
+            width: 95%;
+            margin: auto;
+    }
+}
+
+.videoListTitle {
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2rem 0rem 2rem 2rem;
+    font-size: 1.5rem;
 }
