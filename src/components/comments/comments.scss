@@ -34,6 +34,10 @@
             justify-content: space-around;
             width: 100%;
 
+            @include tablet{
+                justify-content: space-evenly;
+            }
+
             label {
                 color: $secondary-text-color;
                 margin-left: 2rem;
@@ -41,6 +45,7 @@
                 font-size: 1.5rem;
 
                 @include tablet {
+                    font-size: 1rem;
                    
                 }
             }
@@ -61,7 +66,7 @@
                 margin-top: 2rem;
 
                 @include tablet{
-                    margin-top: 2rem;
+                    margin-top: 1rem;
                 }
             }
 
@@ -81,11 +86,11 @@
                 width: 80%;
                 margin-left: 2rem;
                 border-radius: .5rem;
-                border: $divider-form-color .1rem solid;
+                border: $divider-form-color .2rem solid;
 
                 @include tablet {
                     height: 3rem;
-                    width: 100%;
+                    width: 90%;
                 }
             }
         }
@@ -98,7 +103,7 @@
 
             @include tablet {
                 margin-top: 0rem;
-                width: 60%;
+                width: 55%;
             }
         }
 

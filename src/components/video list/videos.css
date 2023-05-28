@@ -22,8 +22,7 @@
 }
 @media (min-width: 768px) {
   .videos__section li {
-    justify-content: left;
-    display: block;
+    display: inline-block;
   }
 }
 .videos__section li img {
@@ -44,7 +43,7 @@
 }
 @media (min-width: 768px) {
   .videos__section li .videoList__items {
-    flex-direction: left;
+    justify-content: left;
   }
 }
 .videos__section li .videoList__text {
@@ -53,6 +52,11 @@
   width: 40%;
   margin-left: 3rem;
   justify-content: right;
+}
+@media (min-width: 768px) {
+  .videos__section li .videoList__text {
+    float: left;
+  }
 }
 .videos__section li .videoList__name {
   font-weight: 600;

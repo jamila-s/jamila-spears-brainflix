@@ -24,7 +24,7 @@ function Active () {
 
             <p className='activeVideoPlayer__title'>{selectedVideo.title}</p>
 
-            <span className='activeVideo__divider'></span>
+            <span className='activeVideo__divider activeVideo__divider-tablet'></span>
             <div className='activeVideoData'>
                 <div className='activeVideoData__section1'>
                     <p className='activeVideoData__section1--channel'>By {selectedVideo.channel}</p>

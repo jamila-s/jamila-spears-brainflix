@@ -22,12 +22,11 @@
         li {
             display: flex;
             flex-direction: row;
-            // justify-content: space-evenly;
             width: 100%;
     
             @include tablet{
-                justify-content: left;
-                display: block;
+                display: inline-block;
+            
             }
     
         img {
@@ -47,10 +46,10 @@
            flex-direction: row;
            justify-content: space-between;
            margin-bottom: 2rem;
-        //    width: 100%;
         
            @include tablet{
-            flex-direction: left;
+            
+            justify-content: left;
            }
             }
            
@@ -61,6 +60,11 @@
             width: 40%;
             margin-left: 3rem;
             justify-content: right;
+
+            @include tablet {
+                float: left;
+            }
+
            }
         
            &__name {

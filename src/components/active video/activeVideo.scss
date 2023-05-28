@@ -10,7 +10,11 @@
         display: flex;
         width: 100%;
         background-color: #000000;
-        height: 60vh;
+        height: 40vh;
+
+        video{
+            width: 100%;
+        }
     }
 
 
@@ -20,8 +24,8 @@
         display: flex;
         font-size: 2rem;
         font-weight: 600;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
+        margin: 1rem;
+    
         width: 85%;
 
     }
@@ -47,17 +51,16 @@
             border-bottom: $divider-form-color .2rem solid;
             width: 95%;
             margin: auto;
+
+            &-tablet {
+
+                @include tablet {
+                    display: none;
+                }
+            }
         }
     
     }
-
-
-        &__divider {
-            display: flex;
-            border-bottom: $divider-form-color .2rem solid;
-            width: 95%;
-            margin: auto;
-        }
 
 }
 
@@ -66,10 +69,15 @@
     margin: 1.5rem 1.5rem .5rem 1.5rem;
     justify-content: space-between;
 
+    @include tablet {
+        margin: 0rem 1.5rem .5rem 1rem;
+    }
+
     &__section1 {
        
             @include tablet {
                 display: flex;
+                
             }
 
         &--channel {
@@ -141,5 +149,9 @@
     &__description{
         width: 90%;
         margin: 1rem auto;
+
+        @include tablet {
+            width: 95%;
+        }
     }
 }
