@@ -1,0 +1,54 @@
+@use '../../styles/partials/variables';
+
+.videoListTitle {
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2rem 0rem 2rem 2rem;
+    font-size: 1.5rem;
+}
+
+.videos{
+
+    display: flex;
+    flex-direction: column;
+    // margin: auto;
+   
+
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    img {
+        width: 40%;
+        height: 8rem;
+        border-radius: .5rem;
+    }
+
+    .videoList {
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+       margin-bottom: 2rem;
+
+       &__text {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 3rem;
+       }
+
+       &__name {
+        font-weight: 600;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+       }
+
+       &__channel {
+        font-size: 1.3rem;
+       }
+    }
+}
+
+}

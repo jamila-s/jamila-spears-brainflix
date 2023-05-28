@@ -2,6 +2,7 @@
 import Header from './components/header/header'
 import Active from './components/active video/activeVideo';
 import CommentsView from './components/comments/comments';
+import Videos from './components/video list/videos';
 
 
 import './App.css';
@@ -19,8 +20,8 @@ function App() {
       <Header />
       <Active />
       <CommentsView />
-      {/* <h1>{selectedVideo.title}</h1>
-      <img className = "activeVideo" src={selectedVideo.image} alt={selectedVideo.title} /> */}
+      <Videos />
+     
 
 
     

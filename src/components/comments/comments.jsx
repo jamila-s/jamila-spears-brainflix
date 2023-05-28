@@ -8,11 +8,11 @@ import videoDataJSON from '../../data/video-details.json';
 function CommentsView () {
     const commentsButton = "comments";
     const commentsIcon = buttonIcon;
-    const [videoData, setVideoData] = useState(videoDataJSON);
-    const [selectedVideo, setSelectedVideo] = useState(videoData[0])
-    const date = new Date (selectedVideo.timestamp).toLocaleDateString();
+    const [commentData, setCommentData] = useState(videoDataJSON);
+    const [selectedComment, setSelectedComment] = useState(commentData[0])
+    const date = new Date (selectedComment.timestamp).toLocaleDateString();
 
-    console.log(selectedVideo.comments)
+    // console.log(selectedVideo.comments)
 
     return (
         <div className="commentsSection">
@@ -36,7 +36,7 @@ function CommentsView () {
       
                 </div>
                 <ul>
-                        {selectedVideo.comments.map((commentData) => (
+                        {selectedComment.comments.map((commentData) => (
                         <li key={commentData.id}>
                         <div className='commentList'>
                         <span className='dot'></span>
@@ -55,21 +55,6 @@ function CommentsView () {
                         </li>))}
                     </ul> 
 
-                    <p className='videoListTitle'>Next Videos</p>
-
-                   <ul className='videos'>
-                        {videoData.map((video) => (
-                        <li key={video.id}>
-                        <div className='videoList'>
-                            <img src={video.image} alt={video.title} />
-                            <div className='videoList__text'>
-                                <p className='videoList__name'>{video.title}</p>
-                                <p className='videoList__channel'>{video.channel}</p>
-                            </div>
-                        </div>
-                        
-                        </li>))}
-                    </ul> 
             </div>
        
     )
