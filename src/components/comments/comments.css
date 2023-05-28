@@ -4,6 +4,12 @@
   font-weight: 500;
   margin-bottom: 2rem;
 }
+@media (min-width: 768px) {
+  .comments__title {
+    font-size: 1rem;
+    margin: 2rem 0 1rem 2.5rem;
+  }
+}
 .comments__form {
   display: flex;
   flex-direction: column;
@@ -12,41 +18,70 @@
 .comments__form-title {
   margin-left: 5rem;
 }
-.comments__form-container {
-  display: flex;
-  width: 100%;
-}
-.comments__form-miniContainer {
+.comments__form-Container {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.comments__form-miniContainer label {
+.comments__form-Container label {
   color: #AFAFAF;
   margin-left: 2rem;
   font-weight: 600;
   font-size: 1.5rem;
 }
-.comments__form-miniContainer input {
+.comments__form-Container input {
   padding-top: 0;
 }
-.comments__form-miniContainer .comments__form-image {
+.comments__form-Container .comments__form-image {
   margin-left: 2rem;
-  height: 70px;
-  width: 80px;
+  height: 55px;
+  width: 65px;
   border-radius: 50%;
   display: inline-block;
   margin-top: 2rem;
 }
-.comments__form-miniContainer form {
+@media (min-width: 768px) {
+  .comments__form-Container .comments__form-image {
+    margin-top: 2rem;
+  }
+}
+.comments__form-Container form {
   width: 100%;
 }
-.comments__form-miniContainer form #userComment {
+@media (min-width: 768px) {
+  .comments__form-Container form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+}
+.comments__form-Container form #userComment {
   height: 8rem;
   width: 80%;
   margin-left: 2rem;
   border-radius: 0.5rem;
   border: #E1E1E1 0.1rem solid;
+}
+@media (min-width: 768px) {
+  .comments__form-Container form #userComment {
+    height: 3rem;
+    width: 100%;
+  }
+}
+.comments__form-miniContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .comments__form-miniContainer {
+    margin-top: 0rem;
+    width: 60%;
+  }
+}
+
+.cButton {
+  margin-top: 1rem;
 }
 
 .commentList {
@@ -62,10 +97,16 @@
   display: inline-block;
   margin-top: 1rem;
 }
+@media (min-width: 768px) {
+  .commentList .dot {
+    height: 2.8125rem;
+    width: 2.8125rem;
+  }
+}
 .commentList__text-container {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }

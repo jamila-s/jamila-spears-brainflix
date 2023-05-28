@@ -20,7 +20,7 @@
         @include tablet {
             display: flex;
             justify-content: right;
-            width: 80%;
+            width: 100%;
         }
 
         input{
@@ -41,7 +41,7 @@
 
         @include tablet {
 
-            width: 50%;
+            width: 60%;
             margin: 0rem 1rem 0rem 0rem;
            
            

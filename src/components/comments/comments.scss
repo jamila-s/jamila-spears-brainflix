@@ -1,4 +1,5 @@
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 
 .comments{
@@ -7,7 +8,12 @@
         margin-left: 2rem;
         font-size: 1.5rem;
         font-weight: 500;
-        margin-bottom: 2rem
+        margin-bottom: 2rem;
+
+        @include tablet {
+            font-size: 1rem;
+            margin: 2rem 0 1rem 2.5rem;
+        }
     }
 
     &__form {
@@ -15,18 +21,15 @@
         flex-direction: column;
         width: 100%;
 
+      
+       
+
         &-title{
         
             margin-left: 5rem;
         }
 
-        &-container{
-            display: flex;
-            width: 100%;
-
-        }
-
-        &-miniContainer{
+        &-Container{
             display: flex;
             justify-content: space-around;
             width: 100%;
@@ -36,23 +39,41 @@
                 margin-left: 2rem;
                 font-weight: 600;
                 font-size: 1.5rem;
+
+                @include tablet {
+                   
+                }
             }
+            
 
             input {
                 padding-top: 0;
+    
+                
             }
 
             .comments__form-image {
                 margin-left: 2rem;
-                height: 70px;
-                width: 80px;
+                height: 55px;
+                width: 65px;
                 border-radius: 50%;
                 display: inline-block;
                 margin-top: 2rem;
+
+                @include tablet{
+                    margin-top: 2rem;
+                }
             }
 
             form {
                 width: 100%;
+
+                @include tablet {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+                }
                 
 
             #userComment{
@@ -61,30 +82,33 @@
                 margin-left: 2rem;
                 border-radius: .5rem;
                 border: $divider-form-color .1rem solid;
+
+                @include tablet {
+                    height: 3rem;
+                    width: 100%;
+                }
             }
         }
+           
         }
-            // button {
-            //     display: flex;
-            //     background-color: $primary-cta-blue;
-            //     border: $primary-cta-blue solid .1rem;
-            //     width: 80%;
-            //     justify-content: left;
-            //     align-items: center;
-            //     margin-left: 2rem;
-            //     margin-top: 1rem;
-            //     height: 7vh;
-            //     border-radius: .3rem;
-            //     color: #FFFFFF;
 
-            //     img{
-            //         padding-right: 7rem ;
-            //     }
-            // }
+        &-miniContainer {
+            display: flex;
+            flex-direction: column;
 
+            @include tablet {
+                margin-top: 0rem;
+                width: 60%;
+            }
+        }
+
+
+    }
 
 }
 
+.cButton{
+    margin-top: 1rem;
 }
 
 
@@ -100,6 +124,11 @@
         border-radius: 50%;
         display: inline-block;
         margin-top: 1rem;
+
+        @include tablet {
+            height: 2.8125rem;
+            width: 2.8125rem;
+        }
     }
 
     &__text {
@@ -107,7 +136,7 @@
         &-container {
             display: flex;
             flex-direction: column;
-            width: 70%;
+            width: 90%;
             margin-bottom: 1rem;
             margin-top: 1rem;
         }

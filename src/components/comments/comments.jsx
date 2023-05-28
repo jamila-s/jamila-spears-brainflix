@@ -21,20 +21,21 @@ function CommentsView () {
             </div>
             <div className='comments__form'>
               
-                <div className="comments__form-container">
-                    <div className='comments__form-miniContainer'>
+               
+                    <div className='comments__form-Container'>
                         <img className="comments__form-image" src={commentsImage} alt="comments photo"/>
                         <form className="comments__form-input">
-                        <label for="userComment">Join the Conversation</label>
-                        <input type="text" name="userComment" id="userComment" placeholder=" Add a new comment" />
-                        {/* <button> <img src={buttonIcon} alt="button icon" /> Comment</button> */}
-                        <Button buttonImage={commentsIcon} buttonLabel={commentsButton} /> 
+                        <div className='comments__form-miniContainer'>
+                            <label for="userComment">Join the Conversation</label>
+                            <input type="text" name="userComment" id="userComment" placeholder=" Add a new comment" />
+                        </div>
+                        <Button className='cButton' buttonImage={commentsIcon} buttonLabel={commentsButton} /> 
                         </form>
                     </div>
-                </div>
+                    </div>
                 <span className='commentList__divider'></span>
       
-                </div>
+               
                 <ul>
                         {selectedComment.comments.map((commentData) => (
                         <li key={commentData.id}>

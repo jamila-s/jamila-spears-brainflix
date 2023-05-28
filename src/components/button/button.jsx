@@ -8,7 +8,7 @@ function Button  (props)  {
     return (
         <div className='button__container'>
             
-            <button><img src={buttonImage} />{buttonLabel}</button>
+            <button><img className='buttonImg' src={buttonImage} />{buttonLabel}</button>
         </div>
   )};
 
