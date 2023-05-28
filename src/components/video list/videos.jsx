@@ -9,14 +9,14 @@ function Videos () {
 
     return (
 
-        <div>
+        <div className='videos'>
 
-            <p className='videoListTitle'>Next Videos</p>
+            <p className='videos__title'> Next Videos </p>
 
-           <ul className='videos'>
+           <ul className='videos__section'>
                 {videoData.map((video) => (
                 <li key={video.id}>
-                <div className='videoList'>
+                <div className='videoList__items'>
                     <img src={video.image} alt={video.title} />
                     <div className='videoList__text'>
                         <p className='videoList__name'>{video.title}</p>

@@ -29,7 +29,7 @@ function CommentsView () {
                             <label for="userComment">Join the Conversation</label>
                             <input type="text" name="userComment" id="userComment" placeholder=" Add a new comment" />
                         </div>
-                        <Button className='cButton' buttonImage={commentsIcon} buttonLabel={commentsButton} /> 
+                        <Button buttonImage={commentsIcon} buttonLabel={commentsButton} /> 
                         </form>
                     </div>
                     </div>

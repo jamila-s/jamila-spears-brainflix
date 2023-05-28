@@ -1,54 +1,99 @@
-@use '../../styles/partials/variables';
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
-.videoListTitle {
-    color: $secondary-text-color;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 2rem 0rem 2rem 2rem;
-    font-size: 1.5rem;
-}
-
-.videos{
-
+.videos {
     display: flex;
     flex-direction: column;
-    // margin: auto;
+    justify-content: left;
+
+    &__title {
+        margin: 1rem 2rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $secondary-text-color;
+        text-transform: uppercase;
+      }
+
+    &__section {
+            display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-evenly;
+            width: 100%;
+    
+            @include tablet{
+                justify-content: left;
+                display: block;
+            }
+    
+        img {
+            width: 15rem;
+            height: 10rem;
+            border-radius: .5rem;
+    
+            @include tablet{
+                width: 20%;
+            }
+    
+        }
+        .videoList {
+
+            &__items{
+            display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           margin-bottom: 2rem;
+        //    width: 100%;
+        
+           @include tablet{
+            flex-direction: left;
+           }
+            }
+           
+        
+           &__text {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-left: 3rem;
+            justify-content: right;
+           }
+        
+           &__name {
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+           }
+        
+           &__channel {
+            font-size: 1.3rem;
+           }
+        
+        
+        }
+        
+
+      }
+    }
+     
+
+
+}
+
+
+
+ 
    
 
-    li {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+  
 
-    img {
-        width: 40%;
-        height: 8rem;
-        border-radius: .5rem;
-    }
 
-    .videoList {
-        display: flex;
-       flex-direction: row;
-       justify-content: center;
-       margin-bottom: 2rem;
 
-       &__text {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        margin-left: 3rem;
-       }
 
-       &__name {
-        font-weight: 600;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-       }
 
-       &__channel {
-        font-size: 1.3rem;
-       }
-    }
-}
 
-}
+

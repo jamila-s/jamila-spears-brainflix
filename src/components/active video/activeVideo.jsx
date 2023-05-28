@@ -6,7 +6,6 @@ import likes from '../../assets/Icons/likes.svg';
 
 
 
-
 // console.log(selectedVideo);
 
 function Active () {
@@ -17,7 +16,12 @@ function Active () {
     return (
         <div className='activeVideoPlayer'>
             
-            <img className = "activeVideo" src={selectedVideo.image} alt={selectedVideo.title} />
+            <div className='videoContainer'>
+                <video poster={selectedVideo.image} controls>
+                    <source src={selectedVideo.video}></source>
+                </video>
+            </div>
+
             <p className='activeVideoPlayer__title'>{selectedVideo.title}</p>
 
             <span className='activeVideo__divider'></span>

@@ -1,34 +1,64 @@
 .videos {
   display: flex;
   flex-direction: column;
+  justify-content: left;
 }
-.videos li {
+.videos__title {
+  margin: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #AFAFAF;
+  text-transform: uppercase;
+}
+.videos__section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.videos__section li {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  width: 100%;
 }
-.videos li img {
-  width: 40%;
-  height: 8rem;
+@media (min-width: 768px) {
+  .videos__section li {
+    justify-content: left;
+    display: block;
+  }
+}
+.videos__section li img {
+  width: 15rem;
+  height: 10rem;
   border-radius: 0.5rem;
 }
-.videos li .videoList {
+@media (min-width: 768px) {
+  .videos__section li img {
+    width: 20%;
+  }
+}
+.videos__section li .videoList__items {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
 }
-.videos li .videoList__text {
+@media (min-width: 768px) {
+  .videos__section li .videoList__items {
+    flex-direction: left;
+  }
+}
+.videos__section li .videoList__text {
   display: flex;
   flex-direction: column;
   width: 40%;
   margin-left: 3rem;
+  justify-content: right;
 }
-.videos li .videoList__name {
+.videos__section li .videoList__name {
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
-.videos li .videoList__channel {
+.videos__section li .videoList__channel {
   font-size: 1.3rem;
 }/*# sourceMappingURL=videos.css.map */

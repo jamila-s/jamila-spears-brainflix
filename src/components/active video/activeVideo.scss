@@ -6,6 +6,13 @@
     width: 100%;
     flex-direction: column;
 
+    .videoContainer{
+        display: flex;
+        width: 100%;
+        background-color: #000000;
+        height: 60vh;
+    }
+
 
     &__title {
         // width: 60%;
@@ -19,11 +26,21 @@
 
     }
 
+    video {
+        // margin: auto;
+    }
+
+
     .activeVideo {
         width: 100%;
-        margin: .75rem auto 1rem auto;
+        // margin: .75rem auto 1rem auto;
         justify-content: center;
-        
+        // background-image: url(../../assets/Icons/play.svg);
+
+        @include tablet {
+            width: 90%;
+            margin: auto;
+        }
 
         &__divider {
             display: flex;
@@ -33,6 +50,15 @@
         }
     
     }
+
+
+        &__divider {
+            display: flex;
+            border-bottom: $divider-form-color .2rem solid;
+            width: 95%;
+            margin: auto;
+        }
+
 }
 
 .activeVideoData {
@@ -42,11 +68,15 @@
 
     &__section1 {
        
-            
+            @include tablet {
+                display: flex;
+            }
+
         &--channel {
             font-weight: 600;
             margin-bottom: 1rem;
             font-size: 1.5rem;
+            margin-right: 2rem;
 
         }
 
@@ -60,16 +90,28 @@
     &__section2 {
         margin-right: 4rem;
 
+        @include tablet {
+            display: flex;
+            margin-right: 0;
+        }
     }
 
     &__viewsSection{
         display: flex;
         margin-bottom: 1rem;
 
+        @include tablet {
+            margin-right: 2rem ;
+        }
+
         &--count {
             margin-left: 1rem;
             color: $secondary-text-color;
             font-size: 1.5rem;
+
+            @include tablet {
+                margin-left: .5rem;
+            }
         }
 
         img {
@@ -85,6 +127,10 @@
             margin-left: 1rem;
             color: $secondary-text-color;
             font-size: 1.5rem;
+
+            @include tablet {
+                margin-left: .5rem;
+            }
         }
 
         img {
