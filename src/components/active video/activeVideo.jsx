@@ -3,6 +3,7 @@ import videoDataJSON from '../../data/video-details.json';
 import './activeVideo.css';
 import views from '../../assets/Icons/views.svg';
 import likes from '../../assets/Icons/likes.svg';
+import Videos from '../../components/video list/videos';
 
 
 

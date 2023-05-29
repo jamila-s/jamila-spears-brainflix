@@ -4,8 +4,17 @@ import './videos.css';
 
 function Videos () {
     const [videoData, setVideoData] = useState(videoDataJSON);
-    const [selectedVideo, setSelectedVideo] = useState(videoData[0])
+    const [selectedVideo, setSelectedVideo] = useState(videoDataJSON[0])
     // const date = new Date (selectedVideo.timestamp).toLocaleDateString();
+
+    const handleSelectVideo = (id) => {
+        console.log('handleSelectVideo', id);
+        videoData.forEach((selectedVideo) => {
+            if(id === selectedVideo.id){
+                setSelectedVideo(selectedVideo);
+            }
+        }) 
+    }
 
     return (
 
@@ -14,13 +23,13 @@ function Videos () {
             <p className='videos__title'> Next Videos </p>
 
            <ul className='videos__section'>
-                {videoData.map((video) => (
-                <li key={video.id}>
+                {videoData.map((selectedVideo) => (
+                <li key={selectedVideo.id} onClick={() => handleSelectVideo(selectedVideo.id)}>
                 <div className='videoList__items'>
-                    <img src={video.image} alt={video.title} />
+                    <img src={selectedVideo.image} alt={selectedVideo.title} />
                     <div className='videoList__text'>
-                        <p className='videoList__name'>{video.title}</p>
-                        <p className='videoList__channel'>{video.channel}</p>
+                        <p className='videoList__name'>{selectedVideo.title}</p>
+                        <p className='videoList__channel'>{selectedVideo.channel}</p>
                     </div>
                 </div>
                 </li>))}
