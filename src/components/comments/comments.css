@@ -68,7 +68,7 @@
 }
 .comments__form-Container form #userComment {
   height: 8rem;
-  width: 80%;
+  width: 90%;
   margin-left: 2rem;
   border-radius: 0.5rem;
   border: #E1E1E1 0.2rem solid;
@@ -120,6 +120,12 @@
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+@media (min-width: 1280px) {
+  .commentList__text-container {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
 .commentList__text-miniContainer {
   display: flex;
   justify-content: space-between;
@@ -132,9 +138,19 @@
 .commentList__text-date {
   color: #AFAFAF;
 }
+@media (min-width: 1280px) {
+  .commentList__text-date {
+    margin-right: 1rem;
+  }
+}
 .commentList__divider {
   display: flex;
   border-bottom: #E1E1E1 0.15rem solid;
   width: 95%;
   margin: auto;
+}
+@media (min-width: 1280px) {
+  .commentList__divider {
+    width: 100%;
+  }
 }/*# sourceMappingURL=comments.css.map */

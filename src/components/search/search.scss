@@ -6,66 +6,110 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     @include tablet{
+        flex-direction: row;
         justify-content: right;
-        width: 70%;
+        width: 100%;
         
     }
 
     &__input {
-        margin-right: 1rem;
         width: 90%;
+        display: flex;
+        justify-content: center;
 
         @include tablet {
             display: flex;
             justify-content: right;
             width: 100%;
         }
+        
+        
+            img{
+            height: 60px;
+            width: 65px;
+            border-radius: 50%;
+             margin-left: 1rem;
+           
+            @include tablet {
+               flex-direction: row-reverse;
+            }
+        
+    }
 
         input{
         
         background-image: url('../../assets/Icons/search.svg');
         background-repeat: no-repeat;
         padding-left: 2rem;
-        margin-left: 2rem;
-        width: 90%;
-        // margin-top: .5rem;
+        width: 70%;
         border: .2rem $divider-form-color solid;
         border-radius: .625rem;
         height: 6vh;
         font-size: 1.1rem;
         color: $primary-text-black;
-    
-        
-
+        margin-right: 1rem;
+       
         @include tablet {
-
-            width: 60%;
+            width: 70%;
             margin: 0rem 1rem 0rem 0rem;
            
-           
+        }
+       
+    }
+
+    }
+
+     &__image {
+
+        img{
+                height: 60px;
+                width: 65px;
+                border-radius: 50%;
+                 margin-right: 2rem;
+               
+    
+                @include tablet {
+                   flex-direction: row-reverse;
+                } 
+        }   
+
+        &-active {
+            img {
+                display:none;
+
+                @include tablet {
+                    display:flex;
+                    margin-left: 2rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        &-deactivate {
+            img {
+                @include tablet {
+                    display: none;
+                }
+            }
         }
     }
+
+    .desktop__order {
+       
+        margin-right: 1rem;
+        width: 90%;
+
+        @include tablet{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
-
-   &__image {
-
-    img{
-            height: 60px;
-            width: 65px;
-            border-radius: 50%;
-            // display: inline-block;
-             margin-right: 2rem;
-            //  position: absolute;
-            //  left: 300px
-
-            @include tablet {
-                display: none;
-            }
-            
-    }   
-        
-     }
-
-    }
+}

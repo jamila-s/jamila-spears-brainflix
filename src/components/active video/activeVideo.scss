@@ -6,16 +6,7 @@
     width: 100%;
     flex-direction: column;
 
-    .videoContainer{
-        display: flex;
-        width: 100%;
-        background-color: #000000;
-        height: 40vh;
-
-        video{
-            width: 100%;
-        }
-    }
+ 
 
 
     &__title {
@@ -58,6 +49,11 @@
                     display: none;
                 }
             }
+
+            @include desktop {
+                width: 100%;
+                margin: 0;
+            }
         }
     
     }
@@ -86,11 +82,21 @@
             font-size: 1.5rem;
             margin-right: 2rem;
 
+            @include desktop {
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
+
         }
 
         &--date {
             font-size: 1.5rem;
             color: $secondary-text-color;
+
+            @include desktop {
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
         }
         
     }
@@ -120,10 +126,19 @@
             @include tablet {
                 margin-left: .5rem;
             }
+
+            @include desktop {
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
         }
 
         img {
             width: 2rem;
+
+            @include desktop {
+                width: 1.5rem;
+            }
         }
     }
 
@@ -139,10 +154,19 @@
             @include tablet {
                 margin-left: .5rem;
             }
+
+            @include desktop {
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
         }
 
         img {
             width: 1.8rem;
+
+            @include desktop {
+                width: 1.3rem;
+            }
         }
     }
 
@@ -152,6 +176,11 @@
 
         @include tablet {
             width: 95%;
+        }
+
+        @include desktop {
+            line-height: 1.75rem;
+            width: 87%;
         }
     }
 }

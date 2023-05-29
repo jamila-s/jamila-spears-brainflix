@@ -83,7 +83,7 @@
 
             #userComment{
                 height: 8rem;
-                width: 80%;
+                width: 90%;
                 margin-left: 2rem;
                 border-radius: .5rem;
                 border: $divider-form-color .2rem solid;
@@ -144,6 +144,11 @@
             width: 90%;
             margin-bottom: 1rem;
             margin-top: 1rem;
+
+            @include desktop {
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
         }
 
         &-miniContainer{
@@ -159,6 +164,10 @@
 
         &-date{
             color: $secondary-text-color;
+
+            @include desktop {
+                margin-right: 1rem;
+            }
         }
     }
 
@@ -167,6 +176,10 @@
             border-bottom: $divider-form-color .15rem solid;
             width: 95%;
             margin: auto;
+
+            @include desktop {
+                width: 100%;
+            }
     }
 }
 

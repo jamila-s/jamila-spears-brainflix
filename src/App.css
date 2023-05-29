@@ -19,4 +19,22 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+@media (min-width: 1280px) {
+  .App__container {
+    display: flex;
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .App__container-mini {
+    width: 60%;
+  }
+}
+@media (min-width: 1280px) {
+  .App .divider {
+    display: flex;
+    border-right: #E1E1E1 0.2rem solid;
+    height: 65rem;
+  }
 }/*# sourceMappingURL=App.css.map */

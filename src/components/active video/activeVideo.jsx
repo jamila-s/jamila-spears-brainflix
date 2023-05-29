@@ -16,12 +16,6 @@ function Active () {
     return (
         <div className='activeVideoPlayer'>
             
-            <div className='videoContainer'>
-                <video poster={selectedVideo.image} controls>
-                    <source src={selectedVideo.video}></source>
-                </video>
-            </div>
-
             <p className='activeVideoPlayer__title'>{selectedVideo.title}</p>
 
             <span className='activeVideo__divider activeVideo__divider-tablet'></span>

@@ -1,4 +1,5 @@
 @use './styles/partials/variables' as *;
+@use './styles/partials/mixins' as *;
 
 * {
     margin: 0;
@@ -24,5 +25,30 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    
+
+    &__container {
+
+        @include desktop {
+        display: flex;
+        margin-left: 2rem;
+        }
+
+        &-mini {
+
+            @include desktop {
+                width: 60%;
+               
+            }
+        }
+    }
+    .divider {
+
+        @include desktop {
+        display: flex;
+        border-right: $divider-form-color .2rem solid;
+        height: 65rem;
+        }
+        
+      
+    }
 }

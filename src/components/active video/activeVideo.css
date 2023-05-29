@@ -3,15 +3,6 @@
   width: 100%;
   flex-direction: column;
 }
-.activeVideoPlayer .videoContainer {
-  display: flex;
-  width: 100%;
-  background-color: #000000;
-  height: 40vh;
-}
-.activeVideoPlayer .videoContainer video {
-  width: 100%;
-}
 .activeVideoPlayer__title {
   text-align: left;
   display: flex;
@@ -41,6 +32,12 @@
     display: none;
   }
 }
+@media (min-width: 1280px) {
+  .activeVideoPlayer .activeVideo__divider {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 .activeVideoData {
   display: flex;
@@ -63,9 +60,21 @@
   font-size: 1.5rem;
   margin-right: 2rem;
 }
+@media (min-width: 1280px) {
+  .activeVideoData__section1--channel {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
 .activeVideoData__section1--date {
   font-size: 1.5rem;
   color: #AFAFAF;
+}
+@media (min-width: 1280px) {
+  .activeVideoData__section1--date {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
 }
 .activeVideoData__section2 {
   margin-right: 4rem;
@@ -95,8 +104,19 @@
     margin-left: 0.5rem;
   }
 }
+@media (min-width: 1280px) {
+  .activeVideoData__viewsSection--count {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
 .activeVideoData__viewsSection img {
   width: 2rem;
+}
+@media (min-width: 1280px) {
+  .activeVideoData__viewsSection img {
+    width: 1.5rem;
+  }
 }
 .activeVideoData__likesSection {
   display: flex;
@@ -112,8 +132,19 @@
     margin-left: 0.5rem;
   }
 }
+@media (min-width: 1280px) {
+  .activeVideoData__likesSection--likes {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
 .activeVideoData__likesSection img {
   width: 1.8rem;
+}
+@media (min-width: 1280px) {
+  .activeVideoData__likesSection img {
+    width: 1.3rem;
+  }
 }
 .activeVideoData__description {
   width: 90%;
@@ -122,5 +153,11 @@
 @media (min-width: 768px) {
   .activeVideoData__description {
     width: 95%;
+  }
+}
+@media (min-width: 1280px) {
+  .activeVideoData__description {
+    line-height: 1.75rem;
+    width: 87%;
   }
 }/*# sourceMappingURL=activeVideo.css.map */

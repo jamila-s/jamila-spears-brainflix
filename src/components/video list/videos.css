@@ -35,6 +35,12 @@
     width: 20%;
   }
 }
+@media (min-width: 1280px) {
+  .videos__section li img {
+    height: 6rem;
+    width: 10rem;
+  }
+}
 .videos__section li .videoList__items {
   display: flex;
   flex-direction: row;
@@ -44,6 +50,11 @@
 @media (min-width: 768px) {
   .videos__section li .videoList__items {
     justify-content: left;
+  }
+}
+@media (min-width: 1280px) {
+  .videos__section li .videoList__items {
+    margin-bottom: 1rem;
   }
 }
 .videos__section li .videoList__text {
@@ -62,6 +73,11 @@
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 1rem;
+}
+@media (min-width: 1280px) {
+  .videos__section li .videoList__name {
+    margin-bottom: 0.3rem;
+  }
 }
 .videos__section li .videoList__channel {
   font-size: 1.3rem;

@@ -3,6 +3,7 @@ import Header from './components/header/header'
 import Active from './components/active video/activeVideo';
 import CommentsView from './components/comments/comments';
 import Videos from './components/video list/videos';
+import Poster from './components/poster/poster';
 
 
 import './App.css';
@@ -18,10 +19,16 @@ function App() {
     
     <div className="App">
       <Header />
-      <Active />
-      <CommentsView />
-      <Videos />
-     
+    
+        <Poster />
+        <div className='App__container'>
+        <div className='App__container-mini'>
+        <Active />
+        <CommentsView />
+        </div>
+        <span className='divider'></span>
+        <Videos />
+     </div>
 
 
     

@@ -12,8 +12,10 @@ function Header(){
     return (
         <header>
             <Logo />
+            <div className="header__container">
             <Search />
-            <Button buttonImage = {uploadImage} buttonLabel = {uploadLabel} />
+            {/* <Button buttonImage = {uploadImage} buttonLabel = {uploadLabel} /> */}
+            </div>
         </header>
     )
 }
